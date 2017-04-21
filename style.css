@@ -1,0 +1,68 @@
+html {
+  font-size: 14px;
+}
+.wrapper {
+  font-family: Microsoft YaHei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+.wrapper .banner {
+  height: 110px;
+  line-height: 110px;
+}
+.wrapper .banner .logo {
+  font-size: 3rem;
+}
+.wrapper .banner .logo .cn {
+  color: #02b2b5;
+}
+.wrapper .banner .logo .en {
+  color: #999fbc;
+}
+.wrapper .banner .phone {
+  margin-top: 35px;
+}
+.wrapper .banner .phone .phone-name,
+.wrapper .banner .phone .phone-number {
+  height: 20px;
+  line-height: 20px;
+}
+.wrapper .banner .phone .phone-name {
+  color: #999fbc;
+}
+.wrapper .banner .phone .phone-number {
+  color: #02b2b5;
+}
+.wrapper .main-nav {
+  height: 51px;
+  background-color: #02b2b5;
+}
+.wrapper .main-nav .navbar {
+  height: 50px;
+}
+.wrapper .main-nav .navbar li {
+  height: 50px;
+}
+.wrapper .my-carousel {
+  height: 540px;
+}
+.wrapper .propducts {
+  height: 350px;
+}
+.wrapper .company {
+  height: 1250px;
+  background-color: #02b2b5;
+}
+.wrapper .examples {
+  height: 1520px;
+  background-color: #f6f6f6;
+}
+.wrapper .news {
+  height: 950px;
+}
+.wrapper .slogan {
+  height: 320px;
+  background-color: #02b2b5;
+}
+.wrapper .footer {
+  height: 160px;
+  background-clip: #4b4b4b;
+}
