@@ -8,11 +8,12 @@ html {
 .wrapper {
     font-family: Microsoft YaHei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; // font-family: 
     .banner {
-        height: 110px;
+        // height: 110px;
         line-height: 110px; // width:80%;
         min-width: 900px;
         .logo {
             font-size: 2rem;
+            font-weight: bold;
             .cn {
                 color: @color;
             }
@@ -22,6 +23,7 @@ html {
         }
         .phone {
             margin-top: 35px;
+            padding-left: 15px;
             .phone-name,
             .phone-number {
                 height: 20px;
@@ -40,9 +42,9 @@ html {
         height: 51px;
         background-color: @color;
         .navbar {
-            height: 50px;
+            // height: 50px;
             li {
-                height: 50px;
+                // height: 50px;
                 a {
                     color: #fff;
                     &:hover {
@@ -54,15 +56,16 @@ html {
         }
     }
     .my-carousel {
-        // height: 540px;
+        height: 540px;
         img {
-            width: 100%; // height: 540px;
+            width: 100%;
+            height: 540px;
             // height: 100%;
         }
     }
     .propducts {
-        height: 350px;
-        padding-top: 50px;
+        // height: 350px;
+        padding: 50px 0;
         .product {
             border-right: 1px solid @grey;
             &:last-of-type {
@@ -77,13 +80,15 @@ html {
                 margin: 0 auto;
             }
             .logo {
-                // text-align: center;
-                // width: 80%;
+               
                 width: 90px;
                 height: 90px;
                 border-radius: 10px;
                 margin: 0 auto;
+                background: @color;
+            &:hover{
                 background: @lightGrey;
+            }
                 span {
                     line-height: 90px;
                     font-size: 4rem;
@@ -94,7 +99,7 @@ html {
                 line-height: 200%;
             }
             p.cn {
-                font-size: 2rem; // line-height: 200%;
+                font-size: 1.5rem; // line-height: 200%;
             }
             p.en {
                 color: @grey;
@@ -102,8 +107,9 @@ html {
         }
     }
     .company {
-        height: 1250px;
+        // height: 1250px;
         background-color: @color;
+        padding-bottom: 150px;
         .wrapper {
             background: @color;
             .top {
@@ -114,7 +120,7 @@ html {
                 .logo{
                     height: 120px;
                     width: 120px;
-                    border: 10px solid lighten(@color,20%);
+                    border: 10px solid lighten(@color,5%);
                     border-radius: 50%;
                     background: #fff;
                     margin: 0 auto;
@@ -135,8 +141,14 @@ html {
                 }
                 .img{
                     height: 360px;
-                    // width: 100%;
-                    background: url('http://placehold.it/600x370')  50%;
+                }
+                .one{
+                    background: url('./imgs/a1.png');
+
+                }
+                .two{
+                    background: url('./imgs/a2.png');
+
                 }
             }
         }
@@ -159,14 +171,17 @@ html {
                 margin-bottom: 40px;
                 .caption{
                     // margin: 10px;
-                    font-size: 2rem;
+                    font-size: 1.7rem;
                     border-bottom: 1px solid @lightGrey;
-                    color: @grey;
+                    color: @color;
                     
                 }
                 .abstract{
+                    padding-top:1rem;
                     color: @grey;
                     font-size: 1rem;
+                    min-height: 330px;
+                    
                 }
             }
         }
@@ -186,11 +201,11 @@ html {
         }
         .content{
             .img{
-                img{
-                    width: 100%;    
-                }
+               height: 600px;
+               background: url('./imgs/d2.jpg')
             }
             .news-item{
+                padding-left: 2.5rem;
                 .media{
                     height: 150px;
                 }
