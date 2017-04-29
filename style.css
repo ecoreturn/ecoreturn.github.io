@@ -7,9 +7,10 @@ html {
 .wrapper .banner {
   height: 110px;
   line-height: 110px;
+  min-width: 900px;
 }
 .wrapper .banner .logo {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .wrapper .banner .logo .cn {
   color: #02b2b5;
@@ -41,28 +42,143 @@ html {
 .wrapper .main-nav .navbar li {
   height: 50px;
 }
-.wrapper .my-carousel {
-  height: 540px;
+.wrapper .main-nav .navbar li a {
+  color: #fff;
+}
+.wrapper .main-nav .navbar li a:hover {
+  color: #02b2b5;
+  background-color: #fff;
+}
+.wrapper .my-carousel img {
+  width: 100%;
 }
 .wrapper .propducts {
   height: 350px;
+  padding-top: 50px;
+}
+.wrapper .propducts .product {
+  border-right: 1px solid #999fbc;
+  height: 250px;
+  padding: 5%;
+}
+.wrapper .propducts .product:last-of-type {
+  border: none;
+}
+.wrapper .propducts .product .logo,
+.wrapper .propducts .product p {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.wrapper .propducts .product .logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  margin: 0 auto;
+  background: #d6d6d6;
+}
+.wrapper .propducts .product .logo span {
+  line-height: 90px;
+  font-size: 4rem;
+  color: #fff;
+}
+.wrapper .propducts .product p {
+  line-height: 200%;
+}
+.wrapper .propducts .product p.cn {
+  font-size: 2rem;
+}
+.wrapper .propducts .product p.en {
+  color: #999fbc;
 }
 .wrapper .company {
   height: 1250px;
   background-color: #02b2b5;
 }
+.wrapper .company .wrapper {
+  background: #02b2b5;
+}
+.wrapper .company .wrapper .top {
+  padding-top: 100px;
+  height: 390px;
+  text-align: center;
+}
+.wrapper .company .wrapper .top .logo {
+  height: 120px;
+  width: 120px;
+  border: 10px solid #20f9fd;
+  border-radius: 50%;
+  background: #fff;
+  margin: 0 auto;
+}
+.wrapper .company .wrapper .top .logo span {
+  line-height: 100px;
+  color: #02b2b5;
+  font-size: 5rem;
+}
+.wrapper .company .wrapper .rect > div {
+  background: #fff;
+  height: 360px;
+}
+.wrapper .company .wrapper .rect .img {
+  height: 360px;
+  background: url('http://placehold.it/600x370') 50%;
+}
 .wrapper .examples {
-  height: 1520px;
   background-color: #f6f6f6;
+  padding-bottom: 100px;
+}
+.wrapper .examples .title {
+  text-align: center;
+  padding: 40px 0;
+}
+.wrapper .examples .cases .case {
+  border-radius: none;
+  border: none;
+  box-shadow: none;
+  padding: 2rem;
+  margin-bottom: 40px;
+}
+.wrapper .examples .cases .case .caption {
+  font-size: 2rem;
+  border-bottom: 1px solid #d6d6d6;
+  color: #999fbc;
+}
+.wrapper .examples .cases .case .abstract {
+  color: #999fbc;
+  font-size: 1rem;
 }
 .wrapper .news {
   height: 950px;
 }
+.wrapper .news .title {
+  font-weight: bold;
+  color: #02b2b5;
+  text-align: center;
+  padding: 3rem 0;
+  line-height: 300%;
+  font-size: 2rem;
+}
+.wrapper .news .content .img img {
+  width: 100%;
+}
+.wrapper .news .content .news-item .media {
+  height: 150px;
+}
 .wrapper .slogan {
   height: 320px;
+  padding-top: 100px;
   background-color: #02b2b5;
 }
+.wrapper .slogan p.cn {
+  color: #fff;
+}
 .wrapper .footer {
+  padding-top: 60px;
   height: 160px;
-  background-clip: #4b4b4b;
+  background-color: #4b4b4b;
+  color: #bdc1c1;
+}
+.wrapper .footer p {
+  line-height: 120%;
 }

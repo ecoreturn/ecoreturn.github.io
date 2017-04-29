@@ -1,77 +1,220 @@
 @color: #02b2b5;
-@grey:#999fbc;
-html{
+@grey: #999fbc;
+@lightGrey: #d6d6d6;
+html {
     font-size: 14px;
 }
 
 .wrapper {
-    font-family: Microsoft YaHei,Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
-    // font-family: 
-    .banner{
+    font-family: Microsoft YaHei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; // font-family: 
+    .banner {
         height: 110px;
-        line-height: 110px;
-        .logo{
-            font-size: 3rem;
-            .cn{
+        line-height: 110px; // width:80%;
+        min-width: 900px;
+        .logo {
+            font-size: 2rem;
+            .cn {
                 color: @color;
             }
-            .en{
+            .en {
                 color: @grey;
             }
-            // width:300px;    
         }
-        .phone{
+        .phone {
             margin-top: 35px;
-            .phone-name,.phone-number{
+            .phone-name,
+            .phone-number {
                 height: 20px;
                 line-height: 20px;
             }
-            .phone-name{
+            .phone-name {
                 color: @grey;
             }
-            .phone-number{
-                color:@color;
+            .phone-number {
+                color: @color;
             }
-
-           
         }
     }
-    .main-nav{
+    .main-nav {
         // border: none;
         height: 51px;
         background-color: @color;
-        .navbar{
+        .navbar {
             height: 50px;
-            li{
+            li {
                 height: 50px;
+                a {
+                    color: #fff;
+                    &:hover {
+                        color: @color;
+                        background-color: #fff;
+                    }
+                }
             }
         }
     }
-    .my-carousel{
-        height: 540px;
+    .my-carousel {
+        // height: 540px;
+        img {
+            width: 100%; // height: 540px;
+            // height: 100%;
+        }
     }
-    .propducts{
+    .propducts {
         height: 350px;
+        padding-top: 50px;
+        .product {
+            border-right: 1px solid @grey;
+            &:last-of-type {
+                border: none;
+            }
+            height: 250px; // background: #f60;
+            padding: 5%;
+            .logo,
+            p {
+                text-align: center;
+                width: 80%;
+                margin: 0 auto;
+            }
+            .logo {
+                // text-align: center;
+                // width: 80%;
+                width: 90px;
+                height: 90px;
+                border-radius: 10px;
+                margin: 0 auto;
+                background: @lightGrey;
+                span {
+                    line-height: 90px;
+                    font-size: 4rem;
+                    color: #fff;
+                }
+            }
+            p {
+                line-height: 200%;
+            }
+            p.cn {
+                font-size: 2rem; // line-height: 200%;
+            }
+            p.en {
+                color: @grey;
+            }
+        }
     }
-    .company{
-        
+    .company {
         height: 1250px;
         background-color: @color;
-    }
-    .examples{
-        height: 1520px;
-        background-color: #f6f6f6;
-    }
-    .news{
-        height: 950px;
-    }
-    .slogan{
-        height: 320px;
-        background-color: @color;
-    }
-    .footer{
-        height: 160px;
-        background-clip: #4b4b4b;
-    }
+        .wrapper {
+            background: @color;
+            .top {
+                padding-top: 100px;
+                height: 390px;
+                text-align: center;
 
+                .logo{
+                    height: 120px;
+                    width: 120px;
+                    border: 10px solid lighten(@color,20%);
+                    border-radius: 50%;
+                    background: #fff;
+                    margin: 0 auto;
+                    span{
+                    line-height: 100px;
+                        color: @color;
+                        font-size: 5rem;
+                    }
+                }
+            }
+            .rect {
+                &>div {
+                    background: #fff;
+                    height: 360px;
+                }
+                .text{
+
+                }
+                .img{
+                    height: 360px;
+                    // width: 100%;
+                    background: url('http://placehold.it/600x370')  50%;
+                }
+            }
+        }
+    }
+    .examples {
+        // height: 1520px;
+        background-color: #f6f6f6;
+        padding-bottom: 100px;
+        .title{
+            text-align: center;
+            // line-height: 300%;
+            padding: 40px 0;
+        }
+        .cases{
+            .case{
+                border-radius: none;
+                border: none;
+                box-shadow: none;
+                padding:2rem;
+                margin-bottom: 40px;
+                .caption{
+                    // margin: 10px;
+                    font-size: 2rem;
+                    border-bottom: 1px solid @lightGrey;
+                    color: @grey;
+                    
+                }
+                .abstract{
+                    color: @grey;
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+    }
+    .news {
+        height: 950px;
+        
+        .title{
+            font-weight: bold;
+            color: @color;
+            text-align: center;
+            padding: 3rem 0;
+            line-height: 300%;
+            font-size: 2rem;
+            
+        }
+        .content{
+            .img{
+                img{
+                    width: 100%;    
+                }
+            }
+            .news-item{
+                .media{
+                    height: 150px;
+                }
+            }
+        }
+    }
+    .slogan {
+        height: 320px;
+        padding-top: 100px;
+        background-color: @color;
+        p.cn{
+            color: #fff;
+        }
+        p.en{
+
+        }
+    }
+    .footer {
+        padding-top: 60px;
+        height: 160px;
+        background-color: #4b4b4b;
+        color: #bdc1c1;
+        p{
+            line-height: 120%;
+        }
+    }
 }
