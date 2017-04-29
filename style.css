@@ -1,6 +1,23 @@
 html {
   font-size: 14px;
 }
+html * {
+  transition: all 0.5s ;
+}
+.shadow {
+  box-shadow: 0 18px 18px 0 rgba(0, 0, 0, 0.05), 0 9px 36px 0 rgba(0, 0, 0, 0.08), 0 27px 9px -18px rgba(0, 0, 0, 0.2);
+}
+.common-title {
+  font-weight: bold;
+  color: #02b2b5;
+  text-align: center;
+  padding: 3rem 0;
+  line-height: 300%;
+  font-size: 2rem;
+  border-bottom: 1px solid #02b2b5;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
+}
 .wrapper {
   font-family: Microsoft YaHei, Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
 }
@@ -26,6 +43,7 @@ html {
 .wrapper .banner .phone .phone-number {
   height: 20px;
   line-height: 20px;
+  font-size: 1.2rem;
 }
 .wrapper .banner .phone .phone-name {
   color: #999fbc;
@@ -34,8 +52,11 @@ html {
   color: #02b2b5;
 }
 .wrapper .main-nav {
-  height: 51px;
   background-color: #02b2b5;
+}
+.wrapper .main-nav .navbar {
+  border: none;
+  margin-bottom: 0;
 }
 .wrapper .main-nav .navbar li a {
   color: #fff;
@@ -44,12 +65,8 @@ html {
   color: #02b2b5;
   background-color: #fff;
 }
-.wrapper .my-carousel {
-  height: 540px;
-}
 .wrapper .my-carousel img {
   width: 100%;
-  height: 540px;
 }
 .wrapper .propducts {
   padding: 50px 0;
@@ -103,6 +120,7 @@ html {
   padding-top: 100px;
   height: 390px;
   text-align: center;
+  color: #fff;
 }
 .wrapper .company .wrapper .top .logo {
   height: 120px;
@@ -119,7 +137,6 @@ html {
 }
 .wrapper .company .wrapper .rect > div {
   background: #fff;
-  height: 360px;
 }
 .wrapper .company .wrapper .rect .text {
   padding: 2.5rem 5rem;
@@ -131,28 +148,44 @@ html {
   border-bottom: 1px solid #d6d6d6;
 }
 .wrapper .company .wrapper .rect .img {
-  height: 360px;
-}
-.wrapper .company .wrapper .rect .one {
-  background: url('./imgs/a1.png');
-}
-.wrapper .company .wrapper .rect .two {
-  background: url('./imgs/a2.png');
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
 }
 .wrapper .examples {
   background-color: #f6f6f6;
   padding-bottom: 100px;
 }
 .wrapper .examples .title {
+  font-weight: bold;
+  color: #02b2b5;
   text-align: center;
-  padding: 40px 0;
+  padding: 3rem 0;
+  line-height: 300%;
+  font-size: 2rem;
+  border-bottom: 1px solid #02b2b5;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
 }
 .wrapper .examples .cases .case {
   border-radius: none;
   border: none;
   box-shadow: none;
-  padding: 2rem;
+  padding: 0;
   margin-bottom: 40px;
+}
+.wrapper .examples .cases .case img {
+  width: 100%;
+  max-width: 500px;
+  max-height: 500px;
+}
+.wrapper .examples .cases .case:hover {
+  box-shadow: 0 18px 18px 0 rgba(0, 0, 0, 0.05), 0 9px 36px 0 rgba(0, 0, 0, 0.08), 0 27px 9px -18px rgba(0, 0, 0, 0.2);
+}
+.wrapper .examples .cases .case .caption,
+.wrapper .examples .cases .case .abstract {
+  padding: 2rem;
 }
 .wrapper .examples .cases .case .caption {
   font-size: 1.7rem;
@@ -163,10 +196,10 @@ html {
   padding-top: 1rem;
   color: #999fbc;
   font-size: 1rem;
-  min-height: 330px;
+  min-height: 28rem;
 }
 .wrapper .news {
-  height: 950px;
+  padding-bottom: 100px;
 }
 .wrapper .news .title {
   font-weight: bold;
@@ -175,10 +208,14 @@ html {
   padding: 3rem 0;
   line-height: 300%;
   font-size: 2rem;
+  border-bottom: 1px solid #02b2b5;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.8rem;
 }
 .wrapper .news .content .img {
-  height: 600px;
-  background: url('./imgs/d2.jpg');
+  max-width: 420px;
+  overflow: hidden;
+  width: 100%;
 }
 .wrapper .news .content .news-item {
   padding-left: 2.5rem;
@@ -187,16 +224,14 @@ html {
   height: 150px;
 }
 .wrapper .slogan {
-  height: 320px;
-  padding-top: 100px;
+  padding: 60px 0;
   background-color: #02b2b5;
 }
 .wrapper .slogan p.cn {
   color: #fff;
 }
 .wrapper .footer {
-  padding-top: 60px;
-  height: 160px;
+  padding: 60px 0;
   background-color: #4b4b4b;
   color: #bdc1c1;
 }
