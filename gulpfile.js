@@ -58,6 +58,11 @@ gulp.task('html', function (cb) {
     .pipe(gulp.dest(destPath))
     .on('end', cb)
 })
+gulp.task('delRev', function (cb) {
+  del(revPath).then(() => {
+    cb()
+  })
+});
 
 
-gulp.task('default', gulpSequence('del', 'less', 'image', 'html'))
+gulp.task('default', gulpSequence('del', 'less', 'image', 'html', 'delRev'))
