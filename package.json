@@ -1,0 +1,35 @@
+{
+  "name": "ecoreturn",
+  "version": "1.0.0",
+  "description": "eco-return.com",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-less": "^3.3.2",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^8.0.0",
+    "gulp-rev-collector": "^1.2.2",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecoreturn/ecoreturn.github.io.git"
+  },
+  "author": "moonreader",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecoreturn/ecoreturn.github.io/issues"
+  },
+  "homepage": "https://github.com/ecoreturn/ecoreturn.github.io#readme"
+}
